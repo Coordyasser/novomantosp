@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Rename-Item *)",
+      "Bash(npm --version)",
+      "Bash(vercel --version)",
+      "Bash(vercel --yes)",
+      "Bash(vercel --yes --scope yasserdevs-projects)",
+      "Bash(vercel whoami *)",
+      "Bash(vercel project *)",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(ls -la .gitignore)",
+      "Bash(cat .gitignore)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

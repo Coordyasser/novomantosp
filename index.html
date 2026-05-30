@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Novo Manto SP — Camisas de time no atacado e varejo. Pronta entrega, enviamos para todo o Brasil.">
+  <title>Novo Manto SP | Camisas de Time no Atacado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =============================================
+       BOTÃO WHATSAPP LATERAL FLUTUANTE
+       Aparece após 2s, fixo na lateral direita
+  ============================================= -->
+  <a id="whatsapp-lateral"
+     href="https://wa.me/5511939617634?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20camisas!"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wpp-label">FALAR AGORA</span>
+  </a>
+
+  <!-- =============================================
+       VÍDEO 1 — PLAYER PIP MINIMIZADO FIXO
+       Canto inferior direito, z-index 999
+  ============================================= -->
+  <div id="video-minimizado" class="video-pip">
+    <div class="video-pip-header">
+      <span class="video-pip-titulo">🎥 Veja nossos produtos</span>
+      <div class="video-pip-controles">
+        <button id="btn-expandir-video" title="Expandir/Recolher">⛶</button>
+        <button id="btn-fechar-video" title="Fechar">✕</button>
+      </div>
+    </div>
+    <div class="video-pip-wrapper">
+      <video autoplay muted loop playsinline>
+        <source src="videos/criativo-2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p class="video-pip-legenda">Veja nossos produtos reais 👆</p>
+  </div>
+
+  <!-- =============================================
+       HEADER / NAVBAR (sticky)
+  ============================================= -->
+  <header id="header">
+    <nav class="container nav-inner">
+      <div class="logo">
+        <span class="logo-nm">NM</span>
+        <span class="logo-texto">NOVO MANTO SP</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#selecao">Seleção</a></li>
+        <li><a href="#atacado">Atacado</a></li>
+        <li><a href="#prova-social">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Menu Mobile Overlay -->
+  <div class="menu-mobile-overlay" id="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+    <button class="menu-fechar" id="menu-fechar" aria-label="Fechar menu">✕</button>
+    <ul>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#selecao">Seleção</a></li>
+      <li><a href="#atacado">Atacado</a></li>
+      <li><a href="#prova-social">Depoimentos</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <!-- =============================================
+       SEÇÃO 1 — HERO / BANNER PRINCIPAL
+  ============================================= -->
+  <section id="hero">
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline>
+        <source src="videos/criativo-1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badges">
+        <span class="badge">⭐ <span data-count="500">0</span>+ clientes</span>
+        <span class="badge">🚚 Envio nacional</span>
+        <span class="badge">🏆 Qualidade garantida</span>
+      </div>
+      <h1 class="hero-titulo">
+        SUAS CAMISAS DE TIME<br>
+        <span class="destaque-vermelho">COM PREÇO DE ATACADO</span>
+      </h1>
+      <p class="hero-subtitulo">Pronta entrega · Atacado e Varejo · De SP para todo o Brasil</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5511939617634?text=Olá!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido!"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-whatsapp">
+          💬 PEDIR NO WHATSAPP
+        </a>
+        <a href="#produtos" class="btn btn-outline">📦 VER PRODUTOS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 2 — DIFERENCIAIS
+  ============================================= -->
+  <section id="diferenciais" class="section-dark">
+    <div class="container">
+      <div class="diferenciais-grid">
+        <div class="diferencial-card fade-in-up">
+          <span class="diferencial-icone">🚚</span>
+          <h3>Pronta Entrega</h3>
+          <p>Produtos em estoque, enviados imediatamente após confirmação.</p>
+        </div>
+        <div class="diferencial-card fade-in-up">
+          <span class="diferencial-icone">💰</span>
+          <h3>Preço de Atacado</h3>
+          <p>Melhores preços do mercado para revendedores e compradores em quantidade.</p>
+        </div>
+        <div class="diferencial-card fade-in-up">
+          <span class="diferencial-icone">🏆</span>
+          <h3>Qualidade Garantida</h3>
+          <p>Camisas selecionadas com rigor para garantir a satisfação do cliente.</p>
+        </div>
+        <div class="diferencial-card fade-in-up">
+          <span class="diferencial-icone">📦</span>
+          <h3>Todo o Brasil</h3>
+          <p>Enviamos para qualquer estado. Rastreamento incluso no pedido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 3 — CAMISAS DA SELEÇÃO (CARROSSEL)
+  ============================================= -->
+  <section id="selecao" class="section-dark">
+    <div class="container">
+      <h2 class="section-titulo fade-in-up">CAMISAS DA <span class="destaque-vermelho">SELEÇÃO BRASILEIRA</span></h2>
+      <p class="section-subtitulo fade-in-up">Todas as versões do Manto Sagrado — pronta entrega para todo o Brasil</p>
+
+      <div class="carrossel-outer fade-in-up">
+        <button class="carrossel-btn carrossel-prev" id="selecao-prev" aria-label="Anterior">&#8249;</button>
+
+        <div class="carrossel-wrapper">
+          <div class="carrossel-track" id="carrossel-selecao">
+
+            <div class="carrossel-slide">
+              <div class="carrossel-slide-inner">
+                <div class="carrossel-slide-img">
+                  <img src="images/selecao/camisa-01.jpg" alt="Camisa Seleção Brasileira - Foto 1" loading="lazy">
+                  <span class="produto-badge">Pronta entrega</span>
+                </div>
+                <div class="carrossel-slide-info">
+                  <h3>Camisa Seleção Brasileira</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="carrossel-slide">
+              <div class="carrossel-slide-inner">
+                <div class="carrossel-slide-img">
+                  <img src="images/selecao/camisa-02.jpg" alt="Camisa Seleção Brasileira - Foto 2" loading="lazy">
+                  <span class="produto-badge">Pronta entrega</span>
+                </div>
+                <div class="carrossel-slide-info">
+                  <h3>Camisa Seleção Brasileira</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="carrossel-slide">
+              <div class="carrossel-slide-inner">
+                <div class="carrossel-slide-img">
+                  <img src="images/selecao/camisa-03.jpg" alt="Camisa Seleção Brasileira - Foto 3" loading="lazy">
+                  <span class="produto-badge">Pronta entrega</span>
+                </div>
+                <div class="carrossel-slide-info">
+                  <h3>Camisa Seleção Brasileira</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="carrossel-slide">
+              <div class="carrossel-slide-inner">
+                <div class="carrossel-slide-img">
+                  <img src="images/selecao/camisa-04.jpg" alt="Camisa Seleção Brasileira - Foto 4" loading="lazy">
+                  <span class="produto-badge">Pronta entrega</span>
+                </div>
+                <div class="carrossel-slide-info">
+                  <h3>Camisa Seleção Brasileira</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="carrossel-slide">
+              <div class="carrossel-slide-inner">
+                <div class="carrossel-slide-img">
+                  <img src="images/selecao/camisa-05.jpg" alt="Camisa Seleção Brasileira - Foto 5" loading="lazy">
+                  <span class="produto-badge">Pronta entrega</span>
+                </div>
+                <div class="carrossel-slide-info">
+                  <h3>Camisa Seleção Brasileira</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="carrossel-slide">
+              <div class="carrossel-slide-inner">
+                <div class="carrossel-slide-img">
+                  <img src="images/selecao/camisa-06.jpg" alt="Camisa Seleção Brasileira - Foto 6" loading="lazy">
+                  <span class="produto-badge">Pronta entrega</span>
+                </div>
+                <div class="carrossel-slide-info">
+                  <h3>Camisa Seleção Brasileira</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="carrossel-slide">
+              <div class="carrossel-slide-inner">
+                <div class="carrossel-slide-img">
+                  <img src="images/selecao/camisa-07.jpg" alt="Camisa Seleção Brasileira - Foto 7" loading="lazy">
+                  <span class="produto-badge">Pronta entrega</span>
+                </div>
+                <div class="carrossel-slide-info">
+                  <h3>Camisa Seleção Brasileira</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="carrossel-slide">
+              <div class="carrossel-slide-inner">
+                <div class="carrossel-slide-img">
+                  <img src="images/selecao/camisa-08.jpg" alt="Camisa Seleção Brasileira - Foto 8" loading="lazy">
+                  <span class="produto-badge">Pronta entrega</span>
+                </div>
+                <div class="carrossel-slide-info">
+                  <h3>Camisa Seleção Brasileira</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="carrossel-btn carrossel-next" id="selecao-next" aria-label="Próximo">&#8250;</button>
+      </div>
+
+      <div class="carrossel-dots" id="carrossel-dots-selecao"></div>
+
+      <div class="produtos-cta fade-in-up" style="margin-top: 40px;">
+        <a href="https://wa.me/5511939617634?text=Olá!%20Quero%20saber%20mais%20sobre%20as%20camisas%20da%20Seleção%20Brasileira!"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-whatsapp btn-grande">
+          💬 QUERO MEU MANTO BRASILEIRO
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 4 — QUALIDADE DO PRODUTO
+  ============================================= -->
+  <section id="qualidade" class="section-darker">
+    <div class="container qualidade-inner">
+      <div class="qualidade-imagem fade-in-left">
+        <img src="images/selecao/camisa-08.jpg" alt="Qualidade Novo Manto SP">
+      </div>
+      <div class="qualidade-texto fade-in-right">
+        <h2>QUALIDADE QUE VOCÊ PODE <span class="destaque-vermelho">SENTIR</span></h2>
+        <p>Cada camisa é confeccionada com tecido de alta performance, oferecendo leveza, respirabilidade e conforto durante todo o dia — seja no estádio, no treino ou no uso casual.</p>
+        <p>Trabalhamos com fornecedores criteriosamente selecionados, que seguem padrões rigorosos de produção: costuras reforçadas, estampas nítidas e cores que mantêm a vivacidade mesmo após diversas lavagens.</p>
+        <p>Cada detalhe é pensado para entregar fidelidade ao visual original das grandes camisas do futebol, aliando autenticidade a um acabamento que você percebe na primeira vez que veste.</p>
+        <p>Do processo de embalagem cuidadosa até a entrega rápida em todo o Brasil, garantimos que o produto chegue até você exatamente como você merece: com qualidade, integridade e o orgulho de vestir o manto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 5 — PRODUTOS EM DESTAQUE
+  ============================================= -->
+  <section id="produtos" class="section-dark">
+    <div class="container">
+      <h2 class="section-titulo fade-in-up">NOSSOS <span class="destaque-vermelho">PRODUTOS</span></h2>
+      <p class="section-subtitulo fade-in-up">Camisas dos principais times do Brasil e do mundo</p>
+      <div class="produtos-grid">
+        <div class="produto-card fade-in-up">
+          <div class="produto-imagem">
+            <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Camisa+Flamengo"
+                 alt="Camisa Flamengo 2024" loading="lazy">
+            <span class="produto-badge">Atacado disponível</span>
+          </div>
+          <div class="produto-info">
+            <h3>Camisa Flamengo 2024</h3>
+          </div>
+        </div>
+        <div class="produto-card fade-in-up">
+          <div class="produto-imagem">
+            <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Camisa+Corinthians"
+                 alt="Camisa Corinthians 2024" loading="lazy">
+            <span class="produto-badge">Pronta entrega</span>
+          </div>
+          <div class="produto-info">
+            <h3>Camisa Corinthians 2024</h3>
+          </div>
+        </div>
+        <div class="produto-card fade-in-up">
+          <div class="produto-imagem">
+            <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Camisa+Palmeiras"
+                 alt="Camisa Palmeiras 2024" loading="lazy">
+            <span class="produto-badge">Atacado disponível</span>
+          </div>
+          <div class="produto-info">
+            <h3>Camisa Palmeiras 2024</h3>
+          </div>
+        </div>
+        <div class="produto-card fade-in-up">
+          <div class="produto-imagem">
+            <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Camisa+São+Paulo"
+                 alt="Camisa São Paulo 2024" loading="lazy">
+            <span class="produto-badge">Pronta entrega</span>
+          </div>
+          <div class="produto-info">
+            <h3>Camisa São Paulo 2024</h3>
+          </div>
+        </div>
+        <div class="produto-card fade-in-up">
+          <div class="produto-imagem">
+            <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Camisa+Real+Madrid"
+                 alt="Camisa Real Madrid 2024" loading="lazy">
+            <span class="produto-badge">Importada</span>
+          </div>
+          <div class="produto-info">
+            <h3>Camisa Real Madrid 2024</h3>
+          </div>
+        </div>
+        <div class="produto-card fade-in-up">
+          <div class="produto-imagem">
+            <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Camisa+Barcelona"
+                 alt="Camisa Barcelona 2024" loading="lazy">
+            <span class="produto-badge">Importada</span>
+          </div>
+          <div class="produto-info">
+            <h3>Camisa Barcelona 2024</h3>
+          </div>
+        </div>
+      </div>
+      <div class="produtos-cta fade-in-up">
+        <a href="https://wa.me/5511939617634?text=Olá!%20Quero%20ver%20o%20catálogo%20completo%20de%20camisas!"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-whatsapp btn-grande">
+          💬 QUERO ENCOMENDAR — CHAMAR NO WHATSAPP
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 6 — ATACADO
+  ============================================= -->
+  <section id="atacado" class="section-atacado">
+    <div class="container atacado-inner">
+      <div class="atacado-texto fade-in-left">
+        <h2>COMPRE NO ATACADO<br><span>E LUCRE MAIS</span></h2>
+        <p>Seja nosso revendedor e garanta os melhores preços do mercado. Atendemos de SP para todo o Brasil!</p>
+        <a href="https://wa.me/5511939617634?text=Quero%20informações%20sobre%20atacado!"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-whatsapp">
+          💬 QUERO COMPRAR NO ATACADO
+        </a>
+      </div>
+      <div class="atacado-beneficios fade-in-right">
+        <ul>
+          <li>✅ Descontos progressivos por quantidade</li>
+          <li>✅ Variedade de times nacionais e internacionais</li>
+          <li>✅ Entrega rápida para todo o Brasil</li>
+          <li>✅ Atendimento personalizado via WhatsApp</li>
+          <li>✅ Produto de qualidade comprovada</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 5 — PROVA SOCIAL COM VÍDEO 2
+  ============================================= -->
+  <section id="prova-social" class="section-darker">
+    <div class="container">
+      <h2 class="section-titulo fade-in-up">QUALIDADE E COMPROMISSO <span class="destaque-vermelho">COM O SEU MANTO</span></h2>
+
+      <div class="video-prova-wrapper fade-in-up">
+        <video controls class="video-prova" preload="metadata">
+          <source src="videos/criativo-3.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+      <p class="video-reforco fade-in-up">Produtos reais, entrega real, clientes reais. ⭐⭐⭐⭐⭐</p>
+
+      <!-- Depoimentos escritos -->
+      <div class="depoimentos-grid">
+        <div class="depoimento-card fade-in-up">
+          <div class="depoimento-estrelas">⭐⭐⭐⭐⭐</div>
+          <p>"Recebi minhas camisas em 3 dias! Qualidade incrível e preço justo. Já fiz meu segundo pedido."</p>
+          <span class="depoimento-autor">— Carlos M., São Paulo/SP</span>
+        </div>
+        <div class="depoimento-card fade-in-up">
+          <div class="depoimento-estrelas">⭐⭐⭐⭐⭐</div>
+          <p>"Comprei 20 camisas para revenda. Tudo certo, bem embalado e com ótima qualidade. Recomendo!"</p>
+          <span class="depoimento-autor">— Fernanda L., Belo Horizonte/MG</span>
+        </div>
+        <div class="depoimento-card fade-in-up">
+          <div class="depoimento-estrelas">⭐⭐⭐⭐⭐</div>
+          <p>"Atendimento rápido no WhatsApp, produto chegou antes do prazo. Com certeza comprarei mais!"</p>
+          <span class="depoimento-autor">— Rafael S., Fortaleza/CE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 6 — FAQ (ACCORDION)
+  ============================================= -->
+  <section id="faq" class="section-dark">
+    <div class="container">
+      <h2 class="section-titulo fade-in-up">PERGUNTAS <span class="destaque-vermelho">FREQUENTES</span></h2>
+      <div class="faq-lista">
+        <div class="faq-item fade-in-up">
+          <button class="faq-pergunta" aria-expanded="false">
+            Qual o pedido mínimo para atacado?
+            <span class="faq-seta" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-resposta" role="region">
+            <p>O pedido mínimo para atacado é a partir de 5 unidades. Quanto maior a quantidade, melhor o preço. Entre em contato para receber nossa tabela de preços!</p>
+          </div>
+        </div>
+        <div class="faq-item fade-in-up">
+          <button class="faq-pergunta" aria-expanded="false">
+            Vocês enviam para todo o Brasil?
+            <span class="faq-seta" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-resposta" role="region">
+            <p>Sim! Enviamos para todos os estados do Brasil. O frete é calculado de acordo com o destino e os Correios ou transportadora são utilizados dependendo da região.</p>
+          </div>
+        </div>
+        <div class="faq-item fade-in-up">
+          <button class="faq-pergunta" aria-expanded="false">
+            Qual o prazo de entrega?
+            <span class="faq-seta" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-resposta" role="region">
+            <p>O prazo varia de 3 a 10 dias úteis dependendo do CEP de destino. Produto em pronta entrega, postagem realizada no próximo dia útil após confirmação de pagamento.</p>
+          </div>
+        </div>
+        <div class="faq-item fade-in-up">
+          <button class="faq-pergunta" aria-expanded="false">
+            As camisas têm garantia de qualidade?
+            <span class="faq-seta" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-resposta" role="region">
+            <p>Sim! Trabalhamos somente com produtos selecionados. Em caso de defeito de fabricação, realizamos a troca. Nossa reputação é construída na confiança dos nossos clientes.</p>
+          </div>
+        </div>
+        <div class="faq-item fade-in-up">
+          <button class="faq-pergunta" aria-expanded="false">
+            Posso comprar avulso também?
+            <span class="faq-seta" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-resposta" role="region">
+            <p>Sim! Atendemos tanto no varejo (peça única) quanto no atacado. Fale conosco no WhatsApp e informe a quantidade desejada para receber o melhor preço!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 7 — CTA FINAL
+  ============================================= -->
+  <section id="cta-final" class="section-cta">
+    <div class="container cta-inner fade-in-up">
+      <h2>PRONTO PARA FAZER <span class="destaque-dourado">SEU PEDIDO?</span></h2>
+      <p>Nossa equipe responde rápido no WhatsApp. Tire suas dúvidas e faça seu pedido agora!</p>
+      <a href="https://wa.me/5511939617634?text=Olá!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido!"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn btn-whatsapp btn-gigante">
+        💬 CHAMAR NO WHATSAPP AGORA
+      </a>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-nm">NM</span>
+        <span class="logo-texto">NOVO MANTO SP</span>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#produtos">Produtos</a>
+        <a href="#selecao">Seleção</a>
+        <a href="#atacado">Atacado</a>
+        <a href="#prova-social">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://instagram.com/novomantosp11" target="_blank" rel="noopener noreferrer">
+          📸 @novomantosp11
+        </a>
+      </div>
+      <p class="footer-copy">© 2025 Novo Manto SP. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
